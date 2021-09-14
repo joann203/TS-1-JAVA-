@@ -1,0 +1,88 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    System.out.println("M=1 , F=2");
+        int Gen=Integer.parseInt(args[0]);
+	    int Age=Integer.parseInt(args[1]);
+	    if( Gen==2 && Age>=1 && Age<=58){
+	        System.out.println("Interest = 8.2%");
+	    }
+	    else if(Gen==2 && Age>=59 && Age<=120){
+		    System.out.println("Interest = 7.6%");
+	    }
+        else if(Gen==1 && Age>=1 && Age<=60){
+		    System.out.println("Interest = 9.2%");
+	    }
+        else if(Gen==1 && Age>=61 && Age<=120){
+		    System.out.println("Interest = 8.3%");
+	    }
+	}
+}
+
+/////////////////////////////////////////////////////////////////////////
+
+public class Main
+{
+	public static void main(String[] args) {
+        int Month=Integer.parseInt(args[0]);
+        switch(Month)
+        {
+            case 1:
+                System.out.println("Jan");
+                break;
+	    case 2:
+                System.out.println("Feb");
+                break;
+            case 3:
+                System.out.println("Mar");
+                break;
+            case 4:
+                System.out.println("Apr");
+                break;
+            case 5:
+                System.out.println("May");
+                break;
+            case 6:
+                System.out.println("Jun");
+                break;
+            case 7:
+                System.out.println("Jul");
+                break;
+            case 8:
+                System.out.println("Agu");
+                break;
+            case 9:
+                System.out.println("Sep");
+                break;
+            case 10:
+                System.out.println("Oct");
+                break;
+            case 11:
+                System.out.println("Nov");
+                break;
+            case 12:
+                System.out.println("Dec");
+        }
+	}
+}
+
+////////////////////////////////////////////////////////////////////////
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+        int num=Integer.parseInt(args[0]);
+        int sum=0,s;
+        
+        while(num!=0){
+            s = num % 10;
+            sum = sum + s;  
+            num = num / 10;
+        }
+        System.out.println(sum);
+	}
+}
+
+///////////////////////////////////////////////////////////////////
+

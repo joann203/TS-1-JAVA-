@@ -1,0 +1,38 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+      
+    Scanner myObj = new Scanner(System.in);
+    System.out.println("Enter name, id and subject marks:");
+    
+    String name = myObj.nextLine();
+    int id = myObj.nextInt();
+    
+    System.out.println("MATHS: ");
+    double MATHS = myObj.nextDouble();
+    
+    System.out.println("PHY: ");
+    double PHY = myObj.nextDouble();
+    
+    System.out.println("CHE: ");
+    double CHE = myObj.nextDouble();
+    
+    System.out.println("TEL: ");
+    double TEL = myObj.nextDouble();
+    
+    System.out.println("ENG: ");
+    double ENG = myObj.nextDouble();
+    
+    double tot=MATHS+PHY+CHE+TEL+ENG;
+    double average=(tot/5.0);
+    double per=(tot/500.0)*100;
+    
+    
+    System.out.println("Name: " + name);
+    System.out.println("id: " + id);
+    System.out.println("average: " + average);
+    System.out.println("percentage: " + per);
+  }
+}
+///////////////////////////////////////////////
+

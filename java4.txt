@@ -1,0 +1,144 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    int num=Integer.parseInt(args[0]);
+	    a=Math.sqrt(num)
+	    if (a.getClass()== float){
+	        System.out.println(num+"is not prime number");
+	    }
+	    else{
+	        System.out.println(num+"is prime number");
+	    }
+	    
+	}
+}
+///////////////////////////////////////////////////////////////
+public class Main
+{
+    public static String isPrimeOrNot(int num) { 
+        if (num < 0) {
+            return "not valid";
+            } 
+        if (num == 0 || num == 1) { 
+            return "not prime";
+            } 
+        if (num == 2 || num == 3) {
+            return "prime number"; 
+            } 
+        if ((num * num - 1) % 24 == 0) {
+            return "prime"; 
+            } 
+        else {
+            return "not prime"; 
+            }
+        } 
+}
+//////////////////////////////////////////////////////////////////
+class Main
+{
+	public static void main(String[] args) {
+	    int num=Integer.parseInt(args[0]);
+	    int count=0;
+	    for(int i=2;i<=Math.sqrt(num);i++)
+	      {
+	          if(num%i==0)
+	           count++;
+	      }
+	    if(count==0)
+	      System.out.println(num+" is prime number");
+	    else
+	      System.out.println(num+" is not prime number");
+	    
+	}
+}
+//////////////////////////////////////////////////////////////////
+class Main
+{
+	public static void main(String[] args) {
+	    int count=0;
+	    int j=10;
+	    for (int j>9 & j<100){
+	        for(int i=2;i<=Math.sqrt(j);i++)
+	          {
+	              if(j%i==0)
+	                count++;
+	          }
+	        if(count==0)
+	          System.out.println(j);
+	        j++;
+	        }
+	    }
+}
+/////////////////////////////////////////////////////////////////
+public class Main
+{
+	public static void main(String[] args) {
+	    
+        int num=Integer.parseInt(args[0]);
+        int sum=0,s;
+        
+        while(num!=0){
+            s = num % 10;
+            sum = sum + s;  
+            num = num / 10;
+        }
+        System.out.println(sum);
+	}
+}
+////////////////////////////////////////////////////////////
+public class Main
+{
+     public static void main(String[] args){
+
+ 
+
+    int a = 9229,reversed = 0;
+    int x=a;
+
+ 
+
+    while(a!= 0) 
+    {
+    
+      int digit = a % 10;
+      reversed = reversed * 10 + digit;
+      a= a/10;
+    }
+    if(x==reversed){
+      System.out.println(x+"is palindrome");  
+      
+    }
+    else{
+        System.out.println(x+"is not palindrome");
+    }
+
+ 
+
+    
+  }
+}
+//////////////////////////////////////////////////////////////
+public class Main
+{
+     public static void main(String[] args){
+
+ 
+    int a=Integer.parseInt(args[0]);
+    int reversed = 0;
+    int x=a;
+
+ 
+
+    while(a!= 0) 
+    {
+    
+      int digit = a % 10;
+      reversed = reversed * 10 + digit;
+      a= a/10;
+    }
+    System.out.println(reversed);
+    
+  }
+}
+////////////////////////////////////////////////////////
+

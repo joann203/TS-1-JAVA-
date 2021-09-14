@@ -1,0 +1,101 @@
+*********1**********
+public class Main
+{
+	public static void main(String[] args) {
+	    int sum=0;
+	    int n=Integer.parseInt(args[0]);
+	    for (int i=1;i<=n;i++){
+	        sum=sum+i;
+	    }
+		System.out.println("sum b/w 1 to "+n+" is "+sum);
+	}
+}
+///////////////////////////////////////////////////////
+**********2**********
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    int num1=0,ld=0,fd=0;
+        int num=Integer.parseInt(args[0]);
+        int s;
+        num1=num;
+        s = num % 10;
+        ld=s;
+        while(num!=0){
+            s = num % 10;
+            num = num / 10;
+            if(num!=0){
+                fd=num;
+            }
+            
+        }
+        System.out.println(num1+" first digit is "+fd+" last digit is "+ld);
+	}
+}
+///////////////////////////////////////////////////////////
+**********3**********
+public class Main
+{
+	public static void main(String[] args) {
+	    
+        int num=Integer.parseInt(args[0]);
+        int sum=0,s;
+        
+        while(num!=0){
+            s = num % 10;
+            sum = sum + s;  
+            num = num / 10;
+        }
+        System.out.println(sum);
+	}
+}
+/////////////////////////////////////////////
+**********4**********
+public class Main
+{
+	public static void main(String[] args) {
+	    
+        int num=Integer.parseInt(args[0]);
+        int product=1,s;
+        
+        while(num!=0){
+            s = num % 10;
+            product = product * s;  
+            num = num / 10;
+        }
+        System.out.println(product);
+	}
+}
+//////////////////////////////////////////////
+**********5**********
+import java.util.Scanner;
+class SwapFirstAndLastDigit{
+    public static void main(String args[]){
+        int n,f,l,r=0,tmp,swap,c,d;
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter the number:\n");
+        n=s.nextInt();
+        tmp=n;
+        l=n%10;
+        while(n>10){
+            n=n/10;
+        }
+        f=n;
+        n=tmp/10;
+        while(n>10){
+            c=n%10;
+            r=r*10+c;
+            n=n/10;
+        }
+        swap=l;
+        while(r>0){
+            d=r%10;
+            swap=swap*10+d;
+            r=r/10;
+        }
+        swap=swap*10+f;
+        System.out.println("After swap:"+swap);
+    }
+}
+//////////////////////////////////////////////////
