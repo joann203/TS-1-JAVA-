@@ -1,0 +1,141 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    Number n1=new Number();
+	    int res=n1.addNo(10);
+		System.out.println(res);
+	}
+}
+class Number{
+    int no=0;
+    int addNo(int no){
+        no=no+no;
+        return(no);
+    }
+}
+//////////////////
+public class Main
+{
+	public static void main(String[] args) {
+	    Number n1=new Number();
+	    int res=n1.addNo(10);
+		System.out.println(res);
+	}
+}
+class Number{
+    int no=0;
+    int addNo(int no){
+        this.no=this.no+no;
+        return(no);
+    }
+}
+/////////////////////
+public class Main
+{
+	public static void main(String[] args) {
+	    Number n1=new Number();
+	    int res=n1.addNo(10);
+		System.out.println(res);
+	}
+}
+class Number{
+    int no=20;
+    int addNo(int no){
+        this.no=this.no+no;
+        return(no);
+    }
+}
+///////////////////
+public class Main
+{
+	public static void main(String[] args) {
+	    Number n1=new Number();
+	    int res=n1.no;
+		System.out.println(res);
+	}
+}
+class Number{
+    int no=0;
+    int addNo(int no){
+        this.no=this.no+no;
+        return(no);
+    }
+}
+/////////////////
+public class Main
+{
+	public static void main(String[] args) {
+	    Sample a1=new Sample();
+	}
+}
+class Sample{
+    Sample(){
+        this("java");
+        System.out.println("default constructor");
+    }
+Sample(String str){
+   
+    System.out.println("one argument constructor"+str);
+    }
+}
+//////////////
+public class Main
+{
+	public static void main(String[] args) {
+	    Number n1=new Number();
+	    n1.add(10);
+	    Number n2=new Number();
+	    n2.add(20);
+	    System.out.println(n1.a);
+	    System.out.println(n2.a);
+	}
+}
+class Number{
+    static int a=1;
+    void add(int num){
+        a=a+num;
+    }
+}
+////////////
+class StaticBlockExampe{
+    StaticBlockExampe(){
+        System.out.println("Within constructor");
+    }
+    static{
+        System.out.println("Within 1st static block");
+    }
+    static void ml(){
+        System.out.println("Within static ml method");
+    }
+    static{
+        System.out.println("Within 2st static block");
+        ml();
+    }
+}
+public class Main{
+	public static void main(String[] args) {
+	    System.out.println("Within main");
+	    StaticBlockExampe x=new StaticBlockExampe();
+	}
+	static{
+        System.out.println("Within 3st static block");
+    }
+}
+//////////////
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    Box a1=new Box();
+	    a1.volume(1,2,3);
+	}
+}
+class Box
+{
+    void volume(double w,double h,double d)
+    {
+        double volume=w*h*d;
+        System.out.println(volume);
+    }
+} 
+////////////////

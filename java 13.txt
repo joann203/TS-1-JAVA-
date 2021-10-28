@@ -1,0 +1,121 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    B s1=new B();
+		System.out.println(s1.a+" "+s1.b);
+	}
+}
+class A{
+    int a;
+    A(){
+        a=10;
+        System.out.println("In class A constructor");
+    }
+}
+class B extends A{
+    int b;
+    B(){
+        b=20;
+        System.out.println("in class B constructor");
+    }
+}
+/////////////
+public class Main
+{
+	public static void main(String[] args) {
+	    B s1=new B(50);
+	}
+}
+class A{
+    int a;
+    A(){
+        a=10;
+        System.out.println("In class A constructor");
+    }
+    A(int val){
+        a=val;
+    }
+}
+class B extends A{
+    int b;
+    B(){
+        b=20;
+        System.out.println("in class B constructor");
+    }
+    B(int val){
+        b=val;
+        System.out.println("a is "+a+" b is "+b);
+    }
+}
+///////////
+public class Main
+{
+	public static void main(String[] args) {
+	    B s1=new B(50);
+	}
+}
+class A{
+    int a;
+    A(){
+        a=10;
+        System.out.println("In class A constructor");
+    }
+    A(int val){
+        a=val;
+    }
+}
+class B extends A{
+    int b;
+    B(){
+        b=20;
+        System.out.println("in class B constructor");
+    }
+    B(int val){
+        super(val*2);
+        b=val;
+        System.out.println("a is "+a+" b is "+b);
+    }
+}
+//////////
+public class Main
+{
+	public static void main(String[] args) {
+	    B s1=new B();
+	    System.out.println("a is "+s1.a+" b is "+s1.b);
+	}
+}
+class A{
+    int a;
+    A(int val){
+        a=val;
+    }
+}
+class B extends A{
+    int b;
+    B(){
+        super(50);
+        b=20;
+        System.out.println("in class B constructor");
+    }
+}
+///////////
+public class Main
+{
+	public static void main(String[] args) {
+	    B s1=new B();
+	    s1.set(20);
+	}
+}
+class A{
+    int val=0;
+}
+class B extends A{
+    int val=0;
+    void set(int val){
+        val=val+10;
+        this.val=val+20;
+        super.val=val*2;
+        System.out.println("arg val is "+val+" b val is "+this.val+" A val is "+super.val);
+    }
+}
+////////////

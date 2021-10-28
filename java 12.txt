@@ -1,0 +1,137 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    subclass sc=new subclass();
+	    sc.disp();
+	}
+}
+class subclass
+{
+    String msg="Hello welcome to classes";
+    void disp(){
+        System.out.println(msg);
+    }
+}
+///////////////////
+public class Main
+{
+	public static void main(String[] args) {
+	    subclass sc=new subclass();
+	    sc.disp();
+	}
+}
+class subclass
+{
+    String msg="Hello welcome to classes";
+    void disp(){
+        System.out.println(msg);
+        subclass1 sub1=new subclass1();
+        sub1.disp();
+    }
+}
+class subclass1
+{
+    String msg="in subclass1";
+    void disp(){
+        System.out.println(msg);
+    }
+}
+/////////////////////
+public class Main
+{
+	public static void main(String[] args) {
+	    subclass sc1=new subclass();
+	    subclass sc2=new subclass();
+	    subclass sc3=new subclass();
+        sc1.disp("Sai Kiran");
+        sc2.disp("Nandan");
+        sc3.disp("Vamsi");
+        System.out.println(sc1.myname+" "+sc2.myname+" "+sc3.myname);
+	}
+}
+class subclass
+{
+    String msg="Hello";
+	String myname;
+	void disp(String name){
+	    myname=name;
+	    System.out.println(msg+name);
+	}
+}
+/////////////////////
+public class Main
+{
+	public static void main(String[] args) {
+	    Constructor c1=new Constructor();
+	    Constructor c2=new Constructor(100,200);
+	}
+}
+class Constructor
+{
+    Constructor(){
+        System.out.println("This place is default Constructor");
+	}
+	Constructor(int a,int b){
+	    System.out.println("This place is a Constructor with one argument "+a+" "+b);
+	}
+}
+/////////////////
+class Employee
+{
+    int id;
+    String name;
+    int salary;
+    Employee()
+    {
+        id=-1;
+        name="NA";
+        salary=0;
+    }
+    Employee(int i)
+    {
+        id=i;
+    }
+    Employee(int i,String n)
+    {
+        id=i;
+        name=n;
+    }
+    Employee(int i,String n,int s)
+    {
+        id=i;
+        name=n;
+        salary=s;
+    }
+    void setid(int i)
+    {
+        id=i;
+    }
+   void setName(String n){
+       name=n;
+   }
+   void setSalary(int s){
+       salary=s;
+   }
+   void getEmpoyeeDetails( )
+   {
+        System.out.println(name+" salary is "+salary);
+   }
+}
+public class Main{
+   public static void main(String[] args)
+   {
+       Employee emp=new Employee();
+       Employee emp1=new Employee(10);
+       Employee emp2=new Employee(12,"Joann");
+       Employee emp3=new Employee(13,"Pramoda",123456);
+       emp.setid(11);
+       emp.getEmpoyeeDetails();
+       emp1.setName("Harshini");
+       emp1.getEmpoyeeDetails();
+       emp2.setSalary(98765);
+       emp2.getEmpoyeeDetails();
+       emp3.getEmpoyeeDetails();
+       
+   }
+}
+////////////////

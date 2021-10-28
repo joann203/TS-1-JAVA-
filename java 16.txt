@@ -1,0 +1,99 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    A a=new A();
+	    B b=new B();
+	    A ref;
+	    ref =a;
+	    ref.m1();
+	    ref=B();
+	    ref.m1();
+	}
+}
+class A{
+    void m1(){
+        System.out.println("Inside A's m1 method");
+    }
+}
+class B extends A{
+    void m1(){
+        System.out.println("Inside B's m1 method");
+    }
+    void disp(){
+        System.out.println("Inside disp method");
+    }
+}
+//////////////////
+public class Main
+{
+	public static void main(String[] args) {
+	    Animals a=new Animals();
+	    herbivores h=new herbivores();
+	    Animals o=new omnivores();
+	    Animals c=new carnivores();
+	    a.eat();
+	    h.eat();
+	    o.eat();
+	    c.eat();
+	}
+}
+class Animals{
+    void eat(){
+        System.out.println("Animal's eat");
+    }
+}
+class carnivores extends Animals{
+    void eat(){
+        System.out.println("carnivores eat meat");
+    }
+}
+class omnivores extends Animals{
+    void eat(){
+        System.out.println("omnivores eat plants and meat");
+    }
+}
+class herbivores extends Animals{
+    void eat(){
+        System.out.println("herbivores eat plants");
+    }
+}
+///////////////////
+public class Main
+{
+	public static void main(String[] args) {
+	    exam a=new exam();
+	    insem_1 h=new insem_1();
+	    insem_2 o=new insem_2();
+	    a.syllabus();
+	    a.marks_obtained();
+	    h.syllabus();
+	    h.marks_obtained();
+	    o.syllabus();
+	    o.marks_obtained();
+	}
+}
+class exam{
+    void syllabus(){
+        System.out.println("syllabus is");
+    }
+    void marks_obtained(){
+        System.out.println("marks obtained is");
+    }
+}
+class insem_1 extends exam{
+    void syllabus(){
+        System.out.println("syllabus is 1st half");
+    }
+    void marks_obtained(int t1){
+        System.out.println("marks obtained is"+t1);
+    }
+}
+class insem_2 extends exam{
+    void syllabus(){
+        System.out.println("syllabus is 2nd half");
+    }
+    void marks_obtained(int t2){
+        System.out.println("marks obtained is"+t2);
+    }
+}
+////////////////////

@@ -1,0 +1,133 @@
+public class Main
+{
+    int a=10;
+    void disp()
+    {
+        System.out.println("value of a is: "+a);
+    }
+   public static void main(String[] args) {
+       Main fob=new Main();
+       System.out.println(fob.a);
+       fob.disp();
+   }
+}
+////////////////////////////
+ublic class Main
+{
+    int a=0;
+    void update(int value)
+    {
+        a=value;
+    }
+   void disp()
+   {
+       System.out.println("value of a is :"+a);
+   }
+public static void main(String[] args)
+   {
+       Main fob=new Main();
+       System.out.println("Intiial value is "+fob.a);
+       fob.update(10);
+       fob.disp();
+   }
+}
+///////////////////////////
+public class Main
+{
+    int id;
+    String name;
+    int salary;
+    void setid(int i)
+    {
+        id=i;
+    }
+   void setName(String n){
+       name=n;
+   }
+   void setSalary(int s){
+       salary=s;
+   }
+   void getMain( )
+   {
+        System.out.println(name+" salary is "+salary);
+   }
+   public static void main(String[] args)
+   {
+       Main emp=new Main();
+       emp.setid(10);
+       emp.setName("Joann");
+       emp.setSalary(123456);
+       emp.getMain();
+   }
+}
+///////////////////////
+public class Main
+{
+    int a=10;
+    int disp()
+    {
+        return a;
+    }
+   public static void main(String[] args) {
+       Main fob=new Main();
+       System.out.println(fob.disp());
+       
+   }
+}
+/////////////////////
+public class Main
+{
+    double balance;
+    void addbalance(double value)
+    {
+        balance=balance+value;
+    }
+   double getbalance()
+    {
+        return balance;
+    }
+   public static void main(String[] args) {
+       Main acc=new Main();
+       acc.addbalance(1000);
+       acc.addbalance(acc.getbalance()*2);
+       System.out.println(acc.getbalance());
+       
+   }
+}
+////////////////////
+public class Main
+{
+    double balance;
+    void addbalance(double value)
+    {
+        balance=balance+value;
+    }
+   void withdraw(double amount)
+   {
+       if(balance-amount<5000){
+           balance=balance;
+           System.out.println("if u withdraw, ur balance amount will be less than 5000");
+           System.out.println("so,your withdrawal is cancled");
+       }
+       else{
+           balance=balance-amount;
+       }
+   }
+   double getbalance()
+    {
+        return balance;
+    }
+   public static void main(String[] args) {
+       Main acc=new Main();
+       acc.addbalance(1000);
+       acc.addbalance(acc.getbalance()*2);
+       System.out.println(acc.getbalance());
+       acc.withdraw(100);
+       System.out.println(acc.getbalance());
+       acc.addbalance(5000);
+       System.out.println(acc.getbalance());
+       acc.withdraw(2000);
+       System.out.println(acc.getbalance());
+   }
+}
+////////////////////////

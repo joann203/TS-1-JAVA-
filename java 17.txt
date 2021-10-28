@@ -1,0 +1,153 @@
+///////// abstract class
+public class Main
+{
+	public static void main(String[] args) {
+		secound obj= new secound();
+		obj.disp();
+	}
+}
+abstract class first{
+    abstract void disp();
+}
+class secound extends first{
+    void disp(){
+        System.out.println("in secound class");
+    }
+}
+/////////
+public class Main
+{
+	public static void main(String[] args) {
+		secound obj= new secound();
+		obj.disp();
+		obj.disp1();
+	}
+}
+abstract class first{
+    abstract void disp();
+    void disp1(){
+        System.out.println("in disp1 of first");
+    }
+}
+class secound extends first{
+    void disp(){
+        System.out.println("in secound class");
+    }
+}
+/////////
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    first obj1;
+		secound obj= new secound();
+		obj.disp();
+		obj.disp1();
+	}
+}
+abstract class first
+{
+    abstract void disp();
+    abstract void disp2()
+    void disp1()
+    {
+        System.out.println("in disp1 of first");
+    }
+}
+class secound extends first
+{
+    void disp()
+    {
+        System.out.println("in secound class");
+    }
+}
+/////////////
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    figure fig;
+	    rectangle obj=new rectangle(9,5);
+	    triangle obj1=new triangle(10,8);
+	    fig=obj;
+	    System.out.println(fig.area());
+	    fig=obj1;
+	    System.out.println(fig.area());
+	}
+}
+abstract class figure
+{
+    double diameter1;
+    double diameter2;
+    figure(double x,double y){
+        diameter1 = x;
+        diameter2 = y;
+    }
+    abstract double area();
+}
+class rectangle extends figure
+{
+    rectangle(double x, double y)
+    {
+        super(x,y);
+    }
+    double area()
+    {
+        System.out.println("Area of rectangle is :");
+        return (diameter1*diameter2);
+    }
+}
+class triangle extends figure
+{
+    triangle(double x, double y)
+    {
+        super(x,y);
+    }
+    double area()
+    {
+        System.out.println("Area of rectangle is :");
+        return (diameter1*diameter2)/2;
+    }
+}
+//////////
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    gbase ob;
+	    ob=new sub();
+	    ob.testbase();
+	}
+}
+abstract class gbase{
+    abstract void testbase();
+}
+class sub extends gbase
+{
+    void testbase()
+    {
+       System.out.println("Hello World"); 
+    }
+}
+////////////
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    sample ob=new sample();
+	    ob.display("Try Me");
+	}
+}
+abstract class gbase{
+    final void display(String s){
+        System.out.println(s);
+    }
+}
+class sample //u can not extends gbase bcos final is there in gbase
+{
+    void display(String s)
+    {
+       System.out.println(s); 
+    }
+}
+////////////

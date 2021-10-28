@@ -1,0 +1,141 @@
+public class Main
+{
+    public static void main (String[] args) {
+        System.out.println(d.divide(17,13));
+        System.out.println(d.divide(10.4,10.6));
+        System.out.println(d.divide(10,10.6));
+        System.out.println(d.divide(10.4,10));
+    }
+}
+class d{
+    static int divide(int a, int b){
+        return a/b;
+    }
+    static double divide(double a, double b){
+        return a/b;
+    }
+    static double divide(int a, double b){
+        return a/b;
+    }
+    static double divide(double a, int b){
+        return a/b;
+    }
+}
+/////////////////when we use static then no need to call object
+public class Main
+{
+    public static void main (String[] args) {
+        cal obj=new cal();
+        obj.square();
+        obj.square(2);
+        obj.square(1.2);
+    }
+}
+class cal{
+    public void square(){
+        System.out.println("No Parameter Method called");
+    }
+    public void square(int a){
+        int s=a*a;
+        System.out.println("Method with integer Argument called:"+s);
+    }
+    public void square(double a){
+        double s=a*a;
+        System.out.println("Method with integer Argument called:"+s);
+    }
+    
+}
+////////////////
+public class Main
+{
+    public static void main (String[] args) {
+        cal obj=new cal();
+        obj.square();
+        obj.square(2);
+        obj.square(1.2);
+    }
+}
+class cal{
+    public int square(){
+        System.out.println("No Parameter Method called");
+        return 0;
+    }
+    public int square(int a){
+        int s=a*a;
+        System.out.println("Method with integer Argument called:"+s);
+        return 0;
+    }
+    public double square(double a){
+        double s=a*a;
+        System.out.println("Method with integer Argument called:"+s);
+        return 0;
+    }
+    
+}
+/////////////////
+public class Main
+{
+    public static void main (String[] args) {
+        sample s=new sample();
+        System.out.println("Value of x:"+s.disp(5));
+        System.out.println("Value of y:"+s.disp(6.5));
+    }
+}
+class sample{
+   int disp(int x){
+       return x;
+   }
+   double disp(double y){
+       return y;
+   }
+    
+}
+////////////////
+public class Main
+{
+    public static void main (String[] args) {
+        typepromotion s=new typepromotion();
+        s.disp(100.0,20);
+        s.disp(11,22);
+        s.disp(11,22.0);
+    }
+}
+class typepromotion{
+   void disp(int x,double y){
+       System.out.println("Method A");
+   }
+   void disp(double x,double y){
+       System.out.println("Method B");
+   }
+    
+}
+////////////////
+public class Main
+{
+    public static void main (String[] args) {
+        shapes a=new shapes();
+        shapes b=new Triangle();
+        shapes c=new circle();
+        a.area();
+        b.area();
+        a.area();
+        c.area();
+    }
+}
+class shapes{
+   public void area(){
+       System.out.println("the formula for area of");
+   }
+    
+}
+class Triangle extends shapes{
+    public void area(){
+       System.out.println("Triangle is 1/2+base+heigth");
+   }
+}
+class circle extends shapes{
+    public void area(){
+       System.out.println("circle is 3.14*radius*radius");
+   }
+}
+///////////////

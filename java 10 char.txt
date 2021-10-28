@@ -1,0 +1,75 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc= new Scanner(System.in);
+	    char chr= sc.next().charAt(0);
+	    System.out.println(chr);
+	}
+}
+///////////////////////////////
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc= new Scanner(System.in);
+	    String st1= sc.nextLine();
+	    char ch= sc.next().charAt(0);
+	    if(st1.indexOf(ch)==-1){
+	        System.out.println("char is not found");
+	    }
+	    else if(st1.indexOf(ch,st1.indexOf(ch)+1)==-1){
+	        System.out.println("char found only once in the sting"+st1.charAt(ch));
+	    }
+	    else{
+	        System.out.println("char found only multiple time at positions"+st1.indexOf(ch,st1.indexOf(ch)+1));
+	    }
+	}
+}
+////////////////////////////////
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc= new Scanner(System.in);
+	    String st1= sc.nextLine();
+	    char ch= sc.next().charAt(0);
+	    if(st1.indexOf(ch)==-1){
+	        System.out.println("char is not found");
+	    }
+	    else if(st1.indexOf(ch)==st1.lastIndexOf(ch)){
+	        System.out.println("char found only once in the sting"+st1.charAt(ch));
+	    }
+	    else{
+	        System.out.println("char found only multiple time at positions"+st1.indexOf(ch)+st1.lastIndexOf(ch));
+	    }
+	}
+}
+////////////////////////////////
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc= new Scanner(System.in);
+	    String st1= sc.nextLine();
+	    String sub=st1.substring(0,3);
+	    System.out.println(sub);
+	}
+}
+///////////////////////////////
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc= new Scanner(System.in);
+	    String st1= sc.nextLine();
+	    if(st1.length()%2==0){
+	        String sub=st1.substring(0,st1.length()/2);
+	        System.out.println(sub);
+	    }
+	    else{
+	        String sub=st1.substring((st1.length()/2)+1,st1.length());
+	        System.out.println(sub);
+	    }
+	}
+}
+///////////////////////////////////

@@ -1,0 +1,93 @@
+-------interface
+public interface FirstInterface{
+    int addmethod(int x,int y);
+    float divmethod(int m,int n);
+    void display();
+    int var1=10;
+    float var2=20.65;
+}
+///////
+public class Main
+{
+	public static void main(String[] args) {
+	    myclass o=new myclass();
+	    o.divmethod(20,4);
+	    o.addmethod(10,20);
+	    o.display();
+	}
+}
+
+interface FirstInterface{
+    int addmethod(int x,int y);
+    float divmethod(int m,int n);
+    void display();
+    int var1=10;
+    float var2=20.65f;
+}
+
+class myclass implements FirstInterface{
+    public int addmethod(int a,int b){
+        return(a+b);
+    }
+    public float divmethod(int m,int n){
+        return (m/n);
+    }
+    public void display(){
+        System.out.println("variable1: "+var1);
+        System.out.println("variable2: "+var2);
+    }
+}
+/////////
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    classone o=new classone();
+	    o.add(10,20);
+	    o.display();
+	    classtwo t=new classtwo();
+	    t.multiply(10,20,30);
+	    t.display();
+	}
+}
+interface intdemo{
+    void display();
+}
+class classone implements intdemo{
+    void add(int x,int y){
+        System.out.println("the sum is i "+(x+y));
+    }
+    public void display(){
+        System.out.println("welcome to the interface");
+    }
+}
+class classtwo implements intdemo{
+    void multiply(int x,int y,int z){
+        System.out.println("the result is "+(x*y*z));
+    }
+    public void display(){
+        System.out.println("welcome to the java");
+    }
+}
+///////////
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	    aimp o=new aimp();
+	    o.m1();
+	}
+}
+interface i1{
+    int a=100;
+    void m1();
+}
+interface a1 extends i1{
+    public void m2();
+}
+class aimp implements i1{
+    public void m1(){
+        System.out.println("in m2 method");
+    }
+}
+/////////

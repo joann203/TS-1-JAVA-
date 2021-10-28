@@ -1,0 +1,130 @@
+public class Main
+{
+	public static void main(String[] args) {
+	    First fob=new First();
+		System.out.println(fob.geta());
+		fob.disp();
+		System.out.println(fob.geta());
+	}
+}
+class First{
+    private int a=10;
+    void disp(){
+        System.out.println(a);
+    }
+    int geta(){
+        return a;
+    }
+}
+/////////////////
+public class Main
+{
+	public static void main(String[] args) {
+	    First fob=new First();
+		System.out.println(fob.geta());
+		System.out.println(fob.sum());
+	}
+}
+class First{
+    private int a=10;
+    public int b=20;
+    int sum(){
+        return(a+b);
+    }
+    int geta(){
+        return a;
+    }
+}
+////////////////
+public class Main
+{
+	public static void main(String[] args) {
+	    First fob=new First();
+		System.out.println(fob.geta());
+		System.out.println(fob.sum());
+		fob.seta(30);
+		System.out.println(fob.geta());
+		System.out.println(fob.sum());
+	}
+}
+class First{
+    private int a=10;
+    public int b=20;
+    int sum(){
+        return(a+b);
+    }
+    int geta(){
+        return a;
+    }
+    void seta(int value){
+        a=value;
+    }
+}
+/////////////////
+public class Main
+{
+	public static void main(String[] args) {
+	    Point fob=new Point(10,20);
+	}
+}
+class Point{
+    int m_x,m_y;
+    public Point(int x,int y){
+        m_x=x;
+        m_y=y;
+    }
+    
+}
+/////////////
+public class Main
+{
+	public static void main(String[] args) {
+	    B fob1=new B();
+	    fob1.m=10;
+	    fob1.n=20;
+	    fob1.c=30;
+	    fob1.disp1();
+	    fob1.disp2();
+	    fob1.sum();
+	}
+}
+class A{
+    int m,n;
+    void disp1(){
+        System.out.println("m and n are: "+m+" "+n);
+    }
+}
+class B extends A{
+    int c;
+    void disp2(){
+        System.out.println("c is: "+c);
+    }
+    void sum(){
+        System.out.println("m+n+c "+(m+n+c));
+    }
+}
+//////////////
+public class Main
+{
+	public static void main(String[] args) {
+	    Programmer pg=new Programmer(2000,200);
+	    System.out.println(pg.Salary);
+	    System.out.println(pg.bonus);
+	    Employee emp=new Employee();
+	    System.out.println(emp.Salary);
+	}
+}
+class Employee{
+    int Salary;
+    Employee(){
+        Salary=1000;
+    }
+}
+class Programmer extends Employee{
+    int bonus=0;
+    Programmer(int sal,int bon){
+        Salary=sal;
+        bonus=bon;
+    }
+}
+/////////////
