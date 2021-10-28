@@ -1,0 +1,35 @@
+class A
+{
+	int a;
+	A(int val1,int val2)
+	{
+		a=val1+val2;
+	}
+	A(int val)
+	{
+		this(val,val*2);
+		a=val;
+	}
+}
+class B extends A
+{ 
+	int b;
+	B()
+	{ 
+		super(50); // super call must be the first call to call the parent constructor
+		b=20;
+		System.out.println("in Class B Constructor");
+		
+	}
+}
+class ooppss
+{
+	public static void main(String[]args)
+	{
+		
+		
+		B b2=new B();
+		System.out.println("a and b are "+b2.a+" "+b2.b);
+		
+	}
+}

@@ -1,0 +1,52 @@
+class examination
+{
+	void syallbus()
+	{
+		
+	}
+	void marks_obtained()
+	{
+		
+	}
+	
+}
+class InSem_1 extends examination
+{
+	void syallbus()
+	{
+		
+	}
+	void marks_obtained()
+	{
+		
+	}
+}
+class InSem_2 extends examination
+{
+	void syallbus()
+	{
+		
+	}
+	void marks_obtained()
+	{
+		
+	}
+}
+class endSem extends examination
+{
+	void syallbus()
+	{
+		
+	}
+	void marks_obtained()
+	{
+		
+	}
+}
+class ooppss
+{
+	public static void main(String[]args)
+	{
+		
+	}
+}

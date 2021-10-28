@@ -1,0 +1,36 @@
+class A
+{
+	int money;
+	private int pocketmoney;
+	void fill(int money,int pocketmoney)
+	{
+		this.money=money;
+		this.pocketmoney=pocketmoney;
+	}
+	public int getpocketmoney()
+	{
+		return pocketmoney;
+	}
+}
+
+class B extends A
+{
+	int total;
+	void sum()
+	{
+		total=money+getpocketmoney();
+		System.out.println(total);
+	}
+}
+
+class oops
+{
+	public static void main(String[]args)
+	{
+		A a1=new A();
+		a1.fill(1234,12);
+		B a2=new B();
+		a2.sum();
+	}
+	
+}

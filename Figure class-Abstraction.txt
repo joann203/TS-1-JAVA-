@@ -1,0 +1,54 @@
+abstract class Figure
+{
+	double dimension1;
+	double dimension2;
+	Figure(double x,double y)
+	{
+		dimension1=x;
+		dimension2=y;
+	}
+	abstract double area();
+}
+
+class Rectangle extends Figure
+{
+	Rectangle(double x,double y)
+	{
+		super(x,y);
+	}
+	double area()
+	{
+		System.out.println("Area of rectangle is :");
+		return dimension1*dimension2;
+	}
+}
+
+class Triangle extends Figure
+{
+	Triangle(double x,double y)
+	{
+		super(x,y);
+	}
+	double area()
+	{
+		System.out.println("Area of rectangle is :");
+		return dimension1*dimension2/2;
+	}
+}
+
+
+class Abstractclass
+{
+	public static void main(String[]args)
+	{
+		Figure f;
+		Rectangle o=new Rectangle(5,4);
+		Triangle o1=new Triangle(2,3);
+		f=o;
+		System.out.println(f.area());
+		f=o1;
+		System.out.println(f.area());
+		
+		
+	}
+}

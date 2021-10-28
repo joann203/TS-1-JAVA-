@@ -1,0 +1,31 @@
+class Division
+{
+	static int divide(int a,int b)
+	{
+		return a/b;
+	}
+	static double divide(double a,double b)
+	{
+		return a/b;
+	}
+	static double divide(int a,double b)
+	{
+		return a/b;
+	}
+	static double divide(double a,int b)
+	{
+		return a/b;
+	}
+}
+
+
+class ooppss
+{
+	public static void main(String[]args)
+	{
+		System.out.println(Division.divide(12,33));
+		System.out.println(Division.divide(34.44,56.889));
+		System.out.println(Division.divide(34,77.5));
+		System.out.println(Division.divide(23.44,23));
+	}
+}

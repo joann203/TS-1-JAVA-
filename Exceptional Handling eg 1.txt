@@ -1,0 +1,21 @@
+import java.io.*;
+class Exceptional_handling
+{
+	public static void main(String[]args)
+	{
+		FileInputStream fx=new FileInputStream("A1.txt");
+	}
+}
+
+//
+
+
+class Exceptional_handling
+{
+	public static void main(String[]args)
+	{
+		int x=0;
+		int y=50/x; // unchecked exception
+		System.out.println("y ="+y);
+	}
+}

@@ -1,0 +1,18 @@
+class Exceptional_handling
+{
+	public static void main(String[]args)
+	{
+		try 
+		{
+			int x=100;
+			int y=0;
+			//int z=x/y; // Division by zero exception
+			System.out.println(args[1]); // if input not given exception occurs
+			
+		}catch(Exception e) // Exception block is executed even if the particular exception block is mentioned
+		{
+			System.out.println("Ooopppssssss"+e);
+		}
+		
+	}
+}

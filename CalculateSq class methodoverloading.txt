@@ -1,0 +1,34 @@
+class CalculateSq
+{
+	public void sq()
+	{
+		System.out.println("No parameters method called");
+	}
+	public int sq(int a)
+	{
+		int square=a*a;
+		return square;
+		
+	}
+	public double sq(double a)
+	{
+		double num=a*a;
+		return num;
+	}
+	
+}
+class ooppss
+{
+	public static void main(String[]args)
+	{
+		CalculateSq o=new CalculateSq();
+		o.sq();
+		int res1=o.sq(23);
+		double res2=o.sq(89.33);
+		System.out.println(res1);
+		System.out.println(res2);
+		
+	}
+}
+
+The static block executes independently i.e., there is no need for the main function

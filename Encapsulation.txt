@@ -1,0 +1,23 @@
+class First
+{
+	private int a=10;
+	void disp()
+	{
+		System.out.println(a);
+	}
+	int geta()
+	{
+		return a;
+	}
+}
+
+class oops
+{
+	public static void main(String[]args)
+	{
+		First fob=new First();
+		System.out.println(fob.geta());
+		fob.disp();
+		//System.out.println(fob.a);
+	}
+}

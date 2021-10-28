@@ -1,0 +1,22 @@
+class Sample
+{
+	int disp(int x)
+	{
+		return x;
+	}
+	// cannot change only the return type when the arguments are of diff type
+	double disp(int y)
+	{
+		return y;
+	}
+}
+
+class ooppss
+{
+	public static void main(String[]args)
+	{
+		Sample o=new Sample();
+		System.out.println("Value of x"+o.disp(2));
+		System.out.println("Value of y"+o.disp(23.22));
+	}
+}

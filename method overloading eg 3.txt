@@ -1,0 +1,19 @@
+class ooppss
+{
+	void disp(int a,double b)
+	{
+		System.out.println("Method A");
+	}
+	void disp(double a,double b)
+	{
+		System.out.println("Method B");
+		
+	}
+	public static void main(String[]args)
+	{
+		ooppss o=new ooppss();
+		o.disp(100.0,33);// 33-int promoted to double
+		o.disp(100,20);//20-int promoted to double
+		o.disp(100,20.0);
+	}
+}

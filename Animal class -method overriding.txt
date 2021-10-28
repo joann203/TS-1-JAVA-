@@ -1,0 +1,45 @@
+class Animal
+{
+	void eat()
+	{
+		System.out.println("Animal's eat");
+	}
+}
+class Herbivores extends Animal
+{
+	void eat()
+	{
+		System.out.println("Herbivores eat plants");
+	}
+}
+
+class Carnivores extends Animal
+{
+	void eat()
+	{
+		System.out.println("Carnivores eat meat");
+	}
+}
+
+class Omnivores extends Animal
+{
+	void eat()
+	{
+		System.out.println("Omnivores eat both plants and meat");
+	}
+}
+
+class ooppss
+{
+	public static void main(String[]args)
+	{
+		Animal o=new Animal();
+		Animal o1=new Herbivores(); //upcasting
+		Animal o2=new Carnivores(); //upcasting
+		Animal o3=new Omnivores(); // upcasting
+		o.eat();
+		o1.eat();
+		o2.eat();
+		o3.eat();
+	}
+}

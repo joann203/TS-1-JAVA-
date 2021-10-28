@@ -1,0 +1,32 @@
+class A
+{
+	int a ;
+	A()
+	{
+		a=10;
+		System.out.println("in Class A Constructor");
+	}
+}
+class B extends A
+{ 
+	int b;
+	B()
+	{
+		b=20;
+		System.out.println("in Class B Constructor");
+	}
+}
+class oops
+{
+	public static void main(String[]args)
+	{
+		A s=new A();
+		System.out.println(s.a+" "+s.b);// error as class B var is accessed with obj of A
+		
+		A s=new A();
+		System.out.println(s.a);// no error
+		
+		B s1=new B();
+		System.out.println(s1.a+" "+s1.b);
+	}
+}

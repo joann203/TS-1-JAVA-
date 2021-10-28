@@ -1,0 +1,41 @@
+interface Demo
+{
+	void display();
+}
+class classone implements Demo
+{
+	void add(int x,int y)
+	{
+		System.out.println("the sum is:"+(x+y));
+	}
+	public void display()
+	{
+		System.out.println("Welcome to Interfaces");
+	}
+}
+
+class classTwo implements Demo
+{
+	void multiply(int i,int j,int k)
+	{
+		System.out.println("Multiplication is"+(i*j*k));
+	}
+	public void display()
+	{
+		System.out.println("Welcome to java");
+	}
+}
+
+class Abstractclass 
+{
+	public static void main(String[]args)
+	{
+		classone c1=new classone();
+		c1.add(2, 3);
+		c1.display();
+		classTwo c2=new classTwo();
+		c2.multiply(2,3,2);
+		c2.display();
+	}
+}
+

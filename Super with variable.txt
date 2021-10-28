@@ -1,0 +1,25 @@
+// super with variable
+class A
+{
+	int val=0;
+}
+class B extends A
+{
+	int val=0;
+	void set(int val)
+	{
+		val=val+10;
+		this.val=val+20;
+		super.val=this.val+val;
+		System.out.println("arg val is"+val+"B arg val is"+this.val+" super arg is"+super.val); // 30 ,50 ,80
+	}
+}
+
+class ooppss
+{
+	public static void main(String args[])
+	{
+		B obj=new B();
+		obj.set(20);
+	}
+}

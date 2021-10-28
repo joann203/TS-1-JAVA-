@@ -1,0 +1,21 @@
+class ooppss
+{
+	void disp(int a,double b)
+	{
+		System.out.println("Method A");
+	}
+	void disp(int a,int b)
+	{
+		System.out.println("Method B");
+		
+	}
+	public static void main(String[]args)
+	{
+		ooppss o=new ooppss();
+		o.disp(100.0,33);// error double cannot be changed to int it is not type promotion
+		o.disp(100,20);
+		o.disp(100,20.0);
+	}
+}
+
+Type promotion: Converts smaller data type to large datatype but cannot be vice versa as there is a loss of data

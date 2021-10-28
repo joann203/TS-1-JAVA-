@@ -1,0 +1,20 @@
+class oops
+{
+	public static void main(String[]args)
+	{
+		Number n1=new Number();
+		int res=n1.addNo(10);
+		System.out.println(res);
+	}
+}
+
+class Number
+{
+	int no=0;
+	int addNo(int no)
+	{
+		no=no+no;
+		return(no);
+	}
+
+}

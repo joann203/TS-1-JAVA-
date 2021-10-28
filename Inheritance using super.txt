@@ -1,0 +1,38 @@
+class A
+{
+	int a ;
+	A() // parent class should have the default constructor if the child class has a constructor (either default or parameterized)
+	{
+		a=10;
+		System.out.println("in Class A Constructor");
+	}
+	A(int val)
+	{
+		a=val;
+	}
+}
+class B extends A
+{ 
+	int b;
+	B()
+	{
+		b=20;
+		System.out.println("in Class B Constructor");
+	}
+	B(int val)
+	{
+		super(val*2); //super is used to call the constructor of parent class and it can be called only once
+		b=val;
+		System.out.println("a and b are "+a+" "+b);
+	}
+}
+class ooppss
+{
+	public static void main(String[]args)
+	{
+		
+		
+		B b2=new B(50);
+		
+	}
+}

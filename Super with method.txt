@@ -1,0 +1,21 @@
+class Person
+{
+	void message()
+	{
+		System.out.println("This is person class");
+	}
+}
+
+class Student extends Person
+{
+	void message()
+	{
+		System.out.println("This is a student class");
+	}
+	void display() 
+	{
+		message();
+		super.message();// calls the parent class message method
+	}
+	
+}

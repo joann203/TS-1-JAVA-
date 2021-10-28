@@ -1,0 +1,23 @@
+interface I1
+{
+	void M1();
+}
+interface A1 extends I1
+{
+	public void M2();
+}
+class Aimp implements I1 // if Aimp implemenst A1 it should have M2 method to override
+{
+	public void M1()
+	{
+		System.out.println("In m1 interface");
+	}
+}
+class Abstractclass 
+{
+	public static void main(String[]args)
+	{
+		Aimp o=new Aimp();
+		o.M1();
+	}
+}

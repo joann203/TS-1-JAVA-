@@ -1,0 +1,30 @@
+abstract class First 
+{
+	abstract void disp(); // declare it with abstract if it is an abstract method
+	abstract void disp2();// If there are 2 abstract methods in abstract class both must be implemented in the sub class else that results in error
+	void disp1()
+	{
+		System.out.println("In First class");
+	}
+	
+}
+class Second extends First
+{
+	void disp()
+	{
+		System.out.println("Second class");
+	}
+}
+
+public class Abstractclass
+{
+	public static void main(String[]args)
+	{
+		First obj;
+		obj=new Second();
+		obj.disp();
+		obj.disp1();
+		
+		
+	}
+}

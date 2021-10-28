@@ -1,0 +1,36 @@
+interface FirstInterface
+{
+	int addmethod(int x,int y);
+	float divMethod(float m,float n);
+	void display();
+	int var1=10;
+	float var2=9.2f;
+}
+ 
+class Myclass implements FirstInterface{
+	public int addmethod(int a,int b)
+	{
+		return(a+b);
+	}
+	public float divMethod(float i,float j)
+	{
+		return(i/j);
+	}
+	public void display()
+	{
+		System.out.println("Var1:"+var1);
+		System.out.println("Var2: "+var2);
+	}
+}
+
+class Abstractclass
+{
+	public static void main(String[]args)
+	{
+		Myclass o=new Myclass();
+		o.addmethod(90,45);
+		o.divMethod(23.1f,78.3f);
+		
+		o.display();
+	}
+}

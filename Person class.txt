@@ -1,0 +1,23 @@
+class Person
+{
+	public void setname(String name)
+	{
+		
+	}
+	public void getname()-
+	{
+		System.out.println(a1.name);.
+	}
+	
+}
+class Employee extends Person
+{
+	void salary(double sal)
+	{
+		double salary=sal;
+	}
+	void yrofEmployee(int yr)
+	{
+		int year=yr;
+	}
+}

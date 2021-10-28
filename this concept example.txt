@@ -1,0 +1,27 @@
+class oops
+{
+	public static void main(String[]args)
+	{
+		Sample a1=new Sample();
+		Sample a2=new Sample("Pramoda");
+		Sample a3=new Sample("Pramoda",10);
+	}
+}
+class Sample
+{
+	Sample()
+	{
+		this("Java");// calls overloaded constructor
+		System.out.println("Default constructor");
+	}
+	
+	Sample(String s)
+	{
+		
+		System.out.println("One argument "+s);
+	}
+	Sample(String s,int n)
+	{
+		System.out.println("Two argumented constructor with arguments "+s+" "+n);
+	}
+}

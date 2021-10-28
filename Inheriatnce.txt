@@ -1,0 +1,43 @@
+//class A is super class or parent class
+class A
+{
+	int m,n;
+	void disp1()
+	{
+		System.out.println("m and n are "+m+" "+n);
+	}	
+}
+//class B is subclass or child class
+//extends is used by child class to get inherited by super class
+class B extends A
+{
+	int c;
+	void disp2()
+	{
+		System.out.println("c:"+c);
+	}
+	void sum()
+	{
+		System.out.print("m+n+c: "+(m+n+c));
+	}
+}
+class oops
+{
+	public static void main(String[]args)
+	{
+		A a=new A();
+		B s2=new B();
+		a.m=4;
+		a.n=5;
+		s2.m=22;
+		s2.n=5;
+		s2.c=1;
+		s2.disp1();
+		s2.disp2();
+		a.disp1();
+		System.out.print("Sum of m,n,c values is ");
+		s2.sum();
+		
+	}
+}
+

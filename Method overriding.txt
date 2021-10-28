@@ -1,0 +1,35 @@
+class Shapes
+{
+	public void area()
+	{
+		System.out.println("The formula for the area of");
+	}
+}
+class Triangle extends Shapes
+{
+	public void area()
+	{
+		System.out.println("Triangle is 1/2*b*h");
+	}
+}
+class Circle extends Shapes
+{
+	public void area()
+	{
+		System.out.println("Circle is 3.14*r**2");
+	}
+}
+
+class ooppss
+{
+	public static void main(String[]args)
+	{
+		Shapes a=new Shapes();
+		Shapes b=new Triangle();//overrides
+		Shapes c=new Circle();//overrides
+		a.area();
+		b.area();
+		a.area();
+		c.area();
+	}
+}

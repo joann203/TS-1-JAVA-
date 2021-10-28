@@ -1,0 +1,22 @@
+class Exceptional_handling
+{
+	public static void main(String[]args)
+	{
+		try 
+		{
+			int x=100;
+			int y=0;
+			int z=x/y; // Division by zero exception
+			System.out.println(args[1]); // if input not given exception occurs
+			
+		}catch(ArrayIndexOutOfBoundsException ar)
+		{
+			System.out.println("Array Out Of Bounds Exception: Rectify");
+		}
+		catch(ArithmeticException e)
+		{
+			System.out.println("Division  by zero");
+		}
+		
+	}
+}

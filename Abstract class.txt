@@ -1,0 +1,29 @@
+abstract class First // tells the sub class how to use the methods in it but does not use the function itself 
+{
+	abstract void disp();// It is a abstract method which has no definition or body
+	void disp1()
+	{
+		System.out.println("In First class");
+	}
+	
+}
+class Second extends First
+{
+	void disp()
+	{
+		System.out.println("Second class");
+	}
+}
+
+public class Abstractclass
+{
+	public static void main(String[]args)
+	{
+		
+		Second obj=new Second();
+		obj.disp();
+		obj.disp1(); // calling the method in abstract class with the object of inherited class
+		
+		
+	}
+}

@@ -1,0 +1,25 @@
+//method overloading(compile time polymorphism)
+
+class Sum
+{
+// we can directly call the function without assigning an object using static
+	static int add(int a,int b)
+	{
+		return a+b;
+	}
+	static double add(double a,double b)
+	{
+		return a+b;
+	}
+}
+
+
+class ooppss
+{
+	public static void main(String args[])
+	{
+		System.out.println(Sum.add(17,13));
+		System.out.println(Sum.add(10.44,10.677));
+	}
+}
+

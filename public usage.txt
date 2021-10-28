@@ -1,0 +1,16 @@
+class oops
+{
+	int m_x,m_y;
+	public oops(int x,int y)
+	{
+		m_x=x;
+		m_y=y;
+		System.out.println(m_x);
+		System.out.println(m_y);
+	}
+	public static void main(String[]args)
+	{
+		oops p=new oops(12,22);
+		System.out.println(p.m_x);
+	}
+}
